@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Digital </title>
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Add Bootstrap JavaScript and jQuery (you can use a local copy if preferred) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
     <div class="header">
@@ -27,13 +21,13 @@
     <form name="submit-to-google-sheet" id="order-form">
         <h2>Menu</h2>
         <label for="tableNumber">Table Number:</label><br>
-        <input type="text" class="form-control" id="tableNumber" name="tableNumber" placeholder="Enter table number" maxlength="8">
+        <input type="text" id="tableNumber" name="tableNumber" placeholder="Enter table number" style="width: 115px;" maxlength="8">
+
         
 
         <!-- Menu Items -->
-        <div class="row">
+        <div class="menu">
             <!-- Your menu items here -->
-            <div class="col-md-4">
             <div class="menu-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8O1HtfhFrqgvNekflCnro7RWugSGrPBl9w&usqp=CAU" alt="cutlet">
                 <h3>Cutlet</h3>
@@ -41,105 +35,82 @@
                 <p>Price: ₹25</p>
                 <button type="button" onclick="addItem('Cutlet', 25)">Add to Cart</button>
             </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HcQIG-XtruaadUD57PWX49_7zXkMIMBCSA&usqp=CAU" alt="Medhu Vadai">
+                <h3>Medhu Vadai</h3>
+                <p>As soft it is.</p>
+                <p>Price: ₹10</p>
+                <button type="button" onclick="addItem('Medhu Vadai', 10)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HcQIG-XtruaadUD57PWX49_7zXkMIMBCSA&usqp=CAU" alt="Medhu Vadai">
-                    <h3>Medhu Vadai</h3>
-                    <p>As soft it is.</p>
-                    <p>Price: ₹10</p>
-                    <button type="button" onclick="addItem('Medhu Vadai', 10)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlTQtRe4lg8EHqPBpBfodSGPWkiTNEu2cbw&usqp=CAU" alt="vadai">
+                <h3>Masala Vadai</h3>
+                <p>As crunch it is.</p>
+                <p>Price: ₹10</p>
+                <button type="button" onclick="addItem('Masala Vadai', 10)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlTQtRe4lg8EHqPBpBfodSGPWkiTNEu2cbw&usqp=CAU" alt="vadai">
-                    <h3>Masala Vadai</h3>
-                    <p>As crunch it is.</p>
-                    <p>Price: ₹10</p>
-                    <button type="button" onclick="addItem('Masala Vadai', 10)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDtsBwQf2O-II7A8bYS1sbLZJMBog3goc6Q&usqp=CAU" alt="Banana Bajji">
+                <h3>Banana Bajji</h3>
+                <p>As hot it is.</p>
+                <p>Price: ₹10</p>
+                <button type="button" onclick="addItem('Banana Bajji', 10)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDtsBwQf2O-II7A8bYS1sbLZJMBog3goc6Q&usqp=CAU" alt="Banana Bajji">
-                    <h3>Banana Bajji</h3>
-                    <p>As hot it is.</p>
-                    <p>Price: ₹10</p>
-                    <button type="button" onclick="addItem('Banana Bajji', 10)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ831GR5cPryo_pCPCDkMXF6H4n8yAu-r8ctg&usqp=CAU" alt="onion">
+                <h3>Onion Bajji</h3>
+                <p>As hot  it is.</p>
+                <p>Price: ₹10</p>
+                <button type="button" onclick="addItem('Onion Bajji', 10)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ831GR5cPryo_pCPCDkMXF6H4n8yAu-r8ctg&usqp=CAU" alt="onion">
-                    <h3>Onion Bajji</h3>
-                    <p>As hot  it is.</p>
-                    <p>Price: ₹10</p>
-                    <button type="button" onclick="addItem('Onion Bajji', 10)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7syHNnAuSSQS96hOHryKraMQfwIPj5OJ57g&usqp=CAU" alt="idili">
+                <h3>Idili</h3>
+                <p>A good dinner selection.</p>
+                <p>Price: ₹12(1 piece)</p>
+                <button type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7syHNnAuSSQS96hOHryKraMQfwIPj5OJ57g&usqp=CAU" alt="idili">
-                    <h3>Idili</h3>
-                    <p>A good dinner selection.</p>
-                    <p>Price: ₹12(1 piece)</p>
-                    <button type="button" onclick="addItem('Idili', 12)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0Ky_wW_MZERWAV3Rmh5xB5hMaKzmT59xKA&usqp=CAU" alt="chapathi">
+                <h3>Chapathi</h3>
+                <p>A combo.</p>
+                <p>Price: ₹50(3 piece)</p>
+                <button type="button" onclick="addItem('Chapathi', 50)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0Ky_wW_MZERWAV3Rmh5xB5hMaKzmT59xKA&usqp=CAU" alt="chapathi">
-                    <h3>Chapathi</h3>
-                    <p>A combo.</p>
-                    <p>Price: ₹50(3 piece)</p>
-                    <button type="button" onclick="addItem('Chapathi', 50)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ__RECTpIInVfbsO5AN9GbmFbfboeTB-15Q&usqp=CAU" alt="pongal">
+                <h3>Pongal</h3>
+                <p>Makes me sleepy.</p>
+                <p>Price: ₹50(1 set)</p>
+                <button type="button" onclick="addItem('Pongal', 50)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ__RECTpIInVfbsO5AN9GbmFbfboeTB-15Q&usqp=CAU" alt="pongal">
-                    <h3>Pongal</h3>
-                    <p>Makes me sleepy.</p>
-                    <p>Price: ₹50(1 set)</p>
-                    <button type="button" onclick="addItem('Pongal', 50)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXru1zan-jXXzopGpt4xvMJOzAzYq4FzcLQ&usqp=CAU" alt="dosa">
+                <h3>Dosa</h3>
+                <p>Delight dinner.</p>
+                <p>Price: ₹30(1 piece)</p>
+                <button type="button" onclick="addItem('Dosa', 30)">Add to Cart</button>
             </div>
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXru1zan-jXXzopGpt4xvMJOzAzYq4FzcLQ&usqp=CAU" alt="dosa">
-                    <h3>Dosa</h3>
-                    <p>Delight dinner.</p>
-                    <p>Price: ₹30(1 piece)</p>
-                    <button type="button" onclick="addItem('Dosa', 30)">Add to Cart</button>
-                </div>
-            </div>    
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA6QLzPV-70Jkruwe_N1IH_b6TRiOsP0PABA&usqp=CAU" alt="panner dosa">
-                    <h3>Panner Dosa</h3>
-                    <p>Delight dinner with a taste of milk.</p>
-                    <p>Price: ₹50(1 piece)</p>
-                    <button type="button" onclick="addItem('Panner Dosa', 50)">Add to Cart</button>
-                </div>
-            </div> 
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgaXEblJr5qaJQqxifW5Z1CClRG-xslkZAQ&usqp=CAU" alt="noodles">
-                    <h3>Noodles</h3>
-                    <p>A long way from japan.</p>
-                    <p>Price: ₹70</p>
-                    <button type="button" onclick="addItem('Noodles', 70)">Add to Cart</button>
-                </div>
-            </div> 
-            <div class="col-md-4">
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-BS9cHOwoM5ROCtHZmXl3HdcOcEXahRVCg&usqp=CAU" alt="idiyappam">
-                    <h3>Idiyappam</h3>
-                    <p>A traditional way of India.</p>
-                    <p>Price: ₹50(3 piece)</p>
-                    <button type="button" onclick="addItem('Idiyappam', 50)">Add to Cart</button>
-                </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA6QLzPV-70Jkruwe_N1IH_b6TRiOsP0PABA&usqp=CAU" alt="panner dosa">
+                <h3>Panner Dosa</h3>
+                <p>Delight dinner with a taste of milk.</p>
+                <p>Price: ₹50(1 piece)</p>
+                <button type="button" onclick="addItem('Panner Dosa', 50)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgaXEblJr5qaJQqxifW5Z1CClRG-xslkZAQ&usqp=CAU" alt="noodles">
+                <h3>Noodles</h3>
+                <p>A long way from japan.</p>
+                <p>Price: ₹70</p>
+                <button type="button" onclick="addItem('Noodles', 70)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-BS9cHOwoM5ROCtHZmXl3HdcOcEXahRVCg&usqp=CAU" alt="idiyappam">
+                <h3>Idiyappam</h3>
+                <p>A traditional way of India.</p>
+                <p>Price: ₹50(3 piece)</p>
+                <button type="button" onclick="addItem('Idiyappam', 50)">Add to Cart</button>
             </div>
             
             <!-- Add more menu items here -->
@@ -157,7 +128,7 @@
 
         <!-- Submit button -->
        <div class="button2">
-        <button type="submit" class="btn btn-success" id="submit-button">Submit Order</button>
+            <button type="submit" id="submit-button">Submit Order</button>
         </div>
         
     </form>
@@ -170,7 +141,11 @@
             const cartItems = document.getElementById("cart-items");
             const cartTotal = document.getElementById("cart-total");
 
-            
+            // Create a new hidden input for the item
+        const inputItem = document.createElement("input");
+        inputItem.type = "hidden";
+        inputItem.name = "items[]"; // Use an array for multiple items
+        inputItem.value = `${itemName} - ₹${itemPrice.toFixed(2)}`;
 
             // Create a new list item for the cart
             const listItem = document.createElement("li");
@@ -188,15 +163,9 @@
             listItem.appendChild(removeButton);
             cartItems.appendChild(listItem);
 
-            // Create a new input tag for the item
-            const inputItem = document.createElement("input");
-            inputItem.type = "text";
-            inputItem.className = "item-input";
-            inputItem.name = itemName.toLowerCase(); // Use a lowercase name as "cutlet"
-            inputItem.value = itemName; // Set the input value to "cutlet"
+            // Add the input to the form
+        document.getElementById("order-form").appendChild(inputItem);
 
-            // Append the input to the form
-            const orderForm = document.getElementById("order-form");
             // Update the total
             updateTotal();
         }
