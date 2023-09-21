@@ -141,11 +141,7 @@
             const cartItems = document.getElementById("cart-items");
             const cartTotal = document.getElementById("cart-total");
 
-            // Create a new hidden input for the item
-        const inputItem = document.createElement("input");
-        inputItem.type = "hidden";
-        inputItem.name = "items[]"; // Use an array for multiple items
-        inputItem.value = `${itemName} - ₹${itemPrice.toFixed(2)}`;
+            
 
             // Create a new list item for the cart
             const listItem = document.createElement("li");
@@ -163,9 +159,15 @@
             listItem.appendChild(removeButton);
             cartItems.appendChild(listItem);
 
-            // Add the input to the form
-        document.getElementById("order-form").appendChild(inputItem);
+            // Create a new input tag for the item
+            const inputItem = document.createElement("input");
+            inputItem.type = "text";
+            inputItem.className = "item-input";
+            inputItem.name = itemName.toLowerCase(); // Use a lowercase name as "cutlet"
+            inputItem.value = itemName; // Set the input value to "cutlet"
 
+            // Append the input to the form
+            const orderForm = document.getElementById("order-form");
             // Update the total
             updateTotal();
         }
