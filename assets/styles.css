@@ -175,37 +175,3 @@ label {
     cursor: pointer;
 }
 
-    /* Adjust your CSS for mobile devices here */
-    /* For example, you can stack menu items vertically, reduce font sizes, or adjust padding/margins */
-
-    /* Center-align the table number input */
-    label[for="tableNumber"] {
-        text-align: center;
-        display: block;
-    }
-
-    /* Reduce the size of menu item images */
-    .menu-item img {
-        max-width: 100px;
-        height: auto;
-    }
-
-    /* Center-align menu item text */
-    .menu-item h3,
-    .menu-item p {
-        text-align: center;
-    }
-
-    /* Reduce padding and margins for better mobile spacing */
-    .menu-item {
-        padding: 10px;
-        margin: 10px 0;
-    }
-
-    /* Increase the width of the table number input on mobile */
-    #tableNumber {
-        width: 100%;
-        max-width: 300px;
-        margin: 10px auto;
-    }
-
