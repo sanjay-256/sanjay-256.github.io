@@ -174,4 +174,62 @@ label {
     border-radius: 3px;
     cursor: pointer;
 }
-
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media all and (max-width:787px) {
+    .container .menu-item{
+        width: 100px;
+        height: 150px;
+        margin: 20px 0px;
+    }
+    .container .menu-item img{
+        width: 100px;
+        height: 150px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header h1{
+        font-size: 25px;
+    }
+    .container .menu-item button{
+        margin: 20px 0px;
+    }
+    .move{
+        position: relative;
+        top: -30px;
+    }
+   .menu-item .btn1{
+    position: relative;
+    top: -20px;
+    }
+    .menu-item .btn2{
+        position: relative;
+        top: -70px;
+    }
+    .container .move1{
+        position: relative;
+        top: -5px;
+    }
+    .container #move1{
+        position: relative;
+        top: -30px;
+    }
+  .menu-item .btn0{
+   position: relative;
+   top: -45px;
+  }
+  .container .cart{
+    margin-top: 90px;
+  }
+  .button2 button{
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+}

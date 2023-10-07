@@ -8,6 +8,7 @@
     
 </head>
 <body>
+    <div class="container">
     <div class="header">
         <div class="logo">
             <img src="https://media.istockphoto.com/id/535942959/vector/girl-in-kitchen.jpg?s=612x612&w=0&k=20&c=tApKarwGyhLD-FyDnVmkp-H-ZGuQ3tounsIsB9wF6k8=" alt="Restaurant Logo">
@@ -26,28 +27,30 @@
         
 
         <!-- Menu Items -->
-        <div class="menu">
+        <div class="menu" class="move1">
             <!-- Your menu items here -->
-            <div class="menu-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8O1HtfhFrqgvNekflCnro7RWugSGrPBl9w&usqp=CAU" alt="cutlet">
+            <div  class="menu-item" id="move1">
+                <img class="move1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8O1HtfhFrqgvNekflCnro7RWugSGrPBl9w&usqp=CAU" alt="cutlet">
                 <h3>Cutlet</h3>
                 <p>A crispy crunch.</p>
                 <p>Price: ₹25</p>
-                <button type="button" onclick="addItem('Cutlet', 25)">Add to Cart</button>
+                <button class="btn1" type="button"  onclick="addItem('Cutlet', 25)">Add to Cart</button>
             </div>
-            <div class="menu-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HcQIG-XtruaadUD57PWX49_7zXkMIMBCSA&usqp=CAU" alt="Medhu Vadai">
-                <h3>Medhu Vadai</h3>
+            <div class="menu-item" id="move1">
+                <img  class="move1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HcQIG-XtruaadUD57PWX49_7zXkMIMBCSA&usqp=CAU" alt="Medhu Vadai">
+                <div class="move">
+                    <h3>Medhu Vadai</h3>
                 <p>As soft it is.</p>
                 <p>Price: ₹10</p>
-                <button type="button" onclick="addItem('Medhu Vadai', 10)">Add to Cart</button>
+                </div>
+                <button    class="btn0"   type="button" onclick="addItem('Medhu Vadai', 10)">Add to Cart</button>
             </div>
             <div class="menu-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlTQtRe4lg8EHqPBpBfodSGPWkiTNEu2cbw&usqp=CAU" alt="vadai">
                 <h3>Masala Vadai</h3>
                 <p>As crunch it is.</p>
                 <p>Price: ₹10</p>
-                <button type="button" onclick="addItem('Masala Vadai', 10)">Add to Cart</button>
+                <button  class="btn1"   type="button" onclick="addItem('Masala Vadai', 10)">Add to Cart</button>
             </div>
             <div class="menu-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDtsBwQf2O-II7A8bYS1sbLZJMBog3goc6Q&usqp=CAU" alt="Banana Bajji">
@@ -82,7 +85,7 @@
                 <h3>Pongal</h3>
                 <p>Makes me sleepy.</p>
                 <p>Price: ₹50(1 set)</p>
-                <button type="button" onclick="addItem('Pongal', 50)">Add to Cart</button>
+                <button   class="btn1"   type="button" onclick="addItem('Pongal', 50)">Add to Cart</button>
             </div>
             <div class="menu-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXru1zan-jXXzopGpt4xvMJOzAzYq4FzcLQ&usqp=CAU" alt="dosa">
@@ -96,7 +99,7 @@
                 <h3>Panner Dosa</h3>
                 <p>Delight dinner with a taste of milk.</p>
                 <p>Price: ₹50(1 piece)</p>
-                <button type="button" onclick="addItem('Panner Dosa', 50)">Add to Cart</button>
+                <button   class="btn1"  type="button" onclick="addItem('Panner Dosa', 50)">Add to Cart</button>
             </div>
             <div class="menu-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgaXEblJr5qaJQqxifW5Z1CClRG-xslkZAQ&usqp=CAU" alt="noodles">
@@ -110,7 +113,7 @@
                 <h3>Idiyappam</h3>
                 <p>A traditional way of India.</p>
                 <p>Price: ₹50(3 piece)</p>
-                <button type="button" onclick="addItem('Idiyappam', 50)">Add to Cart</button>
+                <button   class="btn1"   type="button" onclick="addItem('Idiyappam', 50)">Add to Cart</button>
             </div>
             
             <!-- Add more menu items here -->
@@ -132,7 +135,7 @@
         </div>
         
     </form>
-
+</div>
     <!-- JavaScript -->
     <script>
 
@@ -256,17 +259,5 @@
             document.getElementById("cart-total").textContent = "₹0.00";
         });
     </script>
-    
-        <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwu7s57uGrqUlt1sg-uS7g4Q8zgxe7Wd1hcNSGnPNdn_i2zVaKc3QYlSG0lhg0-jQRf/exec'
-        const form = document.forms['submit-to-google-sheet']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-</script>
 </body>
 </html>
