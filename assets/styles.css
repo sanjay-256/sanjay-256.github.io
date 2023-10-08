@@ -197,10 +197,11 @@ label {
     }
 
     .heading h1{
-        margin-right: 30px;
+        margin-right: 40px;
     }
     
     .logo {
         margin-top: 1px;
+        margin-left: 30px;
     }
 }
