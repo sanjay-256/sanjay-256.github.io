@@ -185,8 +185,9 @@ label {
 
  
     .menu-item img{
-        width: 90px; 
+        width: 95px; 
         height: 85px;
+        margin-left:-1px;
     }
 
     .heading {
