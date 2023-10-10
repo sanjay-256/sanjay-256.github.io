@@ -62,6 +62,14 @@
     border: radius 60px; ;
 }
 
+/*navbar fixed top*/
+.navbar.fixed-top 
+{
+    background-color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 .main
 {
     background: url(a.jpg)no-repeat;
@@ -76,6 +84,14 @@
     font-size: 4rem;
     font-weight: 700;
     color: white;
+}
+
+@media all and (max-width:787px)
+{
+    .main h1
+    {
+        font-size: 3.7rem;
+    }
 }
 
 .btn1
