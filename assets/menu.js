@@ -1,5 +1,6 @@
 // Initialize an empty array to store selected items
 const selectedItems = [];
+const totalAmount=document.getElementById("totalAmount");
 
 // Function to add items to the cart
 function addItem(itemName, itemPrice) {
@@ -52,6 +53,7 @@ function updateTotal() {
     });
 
     cartTotal.textContent = `₹${total.toFixed(2)}`;
+    totalAmount.value= total;
 }
 
 // Function to add menu items dynamically

@@ -45,12 +45,14 @@ h1 {
 
 h2 {
     margin-top: 20px;
+    font-family: popins;
 }
 
 /* Styling for table selection */
 label {
     text-align: center;
     font-weight: bold;
+    font-family: popins;
 }
 
 #tableNumber {
@@ -82,11 +84,13 @@ label {
 .menu-item h3 {
     font-size: 1.2rem;
     margin-bottom: 0;
+    font-family: popins;
 }
 
 .menu-item p {
     margin: 0;
     font-size: 0.9rem;
+    font-family:Playfair Display;
 }
 
 
@@ -185,7 +189,7 @@ label {
         font-size: 15px;
     }
 
- 
+
     .menu-item img{
         width: 95px; 
         height: 90px;
@@ -193,12 +197,16 @@ label {
     }
 
     .heading {
-        font-size: 13px
+        font-size: 13px;
+        
     }
 
-    .heading h1{
+    .heading h1
+    {
         margin-right: 35px;
         margin-top: 10px;
+        font-size: 35px;
+        font-family:'lobster',cursive;
     }
     
     .logo {
