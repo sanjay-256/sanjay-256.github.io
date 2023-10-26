@@ -11,9 +11,11 @@
 
 </head>
 <body>
-    <div class="header">
+<div class="header">
         <div class="logo">
+            <a href="./assets/main.html">
             <img src="https://media.istockphoto.com/id/535942959/vector/girl-in-kitchen.jpg?s=612x612&w=0&k=20&c=tApKarwGyhLD-FyDnVmkp-H-ZGuQ3tounsIsB9wF6k8=" alt="Restaurant Logo">
+            </a>
         </div>
         <div class="heading">
             <h1>Welcome to Kaimanam</h1>
@@ -23,8 +25,13 @@
     <!-- Table Selection -->
     <form  id="order-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
         <h2>Menu</h2>
-        <label for="tableNumber">Table Number:</label><br>
-        <input type="text" id="tableNumber" name="tableNumber" placeholder="Enter table number" style="width: 115px;" maxlength="8">
+        <label for="tableNumber"> Choose Table Number:</label><br>
+        <select name="tableNumber" id="tableNumber">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+        </select>
 
         <!-- Menu Items -->
         <div class="menu">
