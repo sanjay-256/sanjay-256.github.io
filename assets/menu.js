@@ -10,13 +10,13 @@ function addItem(itemName, itemPrice) {
     // Create a new hidden input for the item
     const inputItem = document.createElement("input");
     inputItem.type = "hidden";
-    inputItem.name = "items[]"; // Use an array for multiple items
-    inputItem.value = `${itemName} - ₹${itemPrice.toFixed(2)}`;
+    inputItem.name = itemName; // Use an array for multiple items
+    inputItem.value = `${itemPrice.toFixed(2)}`;
 
     // Create a new list item for the cart
     const listItem = document.createElement("li");
     listItem.className = "cart-item";
-    listItem.textContent = `${itemName} - ₹${itemPrice.toFixed(2)}`;
+    listItem.textContent = `${itemName.slice(0, -2) } - ₹${itemPrice.toFixed(2)}`;
 
     // Create a "Remove" button for the cart item
     const removeButton = document.createElement("button");
@@ -34,7 +34,7 @@ function addItem(itemName, itemPrice) {
     selectedItems.push({ name: itemName, price: itemPrice });
 
     // Add the input to the form
-    document.getElementById("order-form").appendChild(inputItem);
+    document.getElementById("orders").appendChild(inputItem);
 
     // Update the total
     updateTotal();
@@ -90,13 +90,13 @@ window.addEventListener("load", addMenuItems);
 
 // Handle form submission (you would typically send data to the server here)
 document.getElementById("order-form").addEventListener("submit", (event) => {
-    event.preventDefault();
+    
     const formData = new FormData(document.getElementById("order-form"));
     const tableNumber = document.getElementById("tableNumber").value;
     const cartItems = document.querySelectorAll(".cart-item");
 
     // Show an alert message
-    alert("Order submitted successfully!");
+   
 
     // Prepare the order data (you can customize this)
     const order = {
@@ -117,7 +117,7 @@ document.getElementById("order-form").addEventListener("submit", (event) => {
     // Clear the cart and reset the form (you can customize this)
     document.getElementById("cart-items").innerHTML = "";
     document.getElementById("cart-total").textContent = "₹0.00";
-    document.getElementById("tableNumber").value = "";
+    
 
     // Clear the selectedItems array
     selectedItems.length = 0;
