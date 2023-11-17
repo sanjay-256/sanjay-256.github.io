@@ -122,9 +122,9 @@
 
 .apple {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(bg1.jpg) no-repeat;
-    background-size:cover;
-    height: 40vh;
-    width: 100%;
+    background-size:auto ;
+    background-position: 50% 50%;
+    align-content: center;
 }
 
 
