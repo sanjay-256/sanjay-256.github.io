@@ -15,8 +15,8 @@
 
 .navbar-brand img
 {
-    width: 80px;
-    height: auto;
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -121,11 +121,12 @@
 }
 
 .apple {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(bg1.jpg) no-repeat;
-    background-size:auto ;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(bg1.jpg) no-repeat;
+    background-size: contain;
     background-position: 50% 50%;
     align-content: center;
 }
+
 
 
 
@@ -200,8 +201,7 @@
 .logo img {
     width: 150px;
     height: auto;
-    border: 2px solid #333; /* Added border color */
-    border-radius: 20px;
+    border-radius: 40%;
     display: block;
     margin:0 auto;
     background-color: transparent;
@@ -244,6 +244,15 @@ h2 {
     margin-top: 10px; /* Add margin to the top of h5 elements */
     font-family:'Rubik',sans-serif;
 }
+
+.carousel-inner img
+{
+    padding-top: 30px;
+    border-radius: 30%;
+    height: 230px;
+    width: 270px;
+}
+
 .new h1
 {
     font-family:popins;
@@ -259,8 +268,8 @@ h2 {
 {
     height: 200px;
     width: 250px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
 }
 
 

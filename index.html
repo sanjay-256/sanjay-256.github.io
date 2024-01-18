@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik&display=swap">
-    <link rel="stylesheet" href="./assets/boots.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaimanam</title>
+  <link rel="icon" href="./assets/logo_rounded.png">
+  <link rel="stylesheet" href="./assets/boots.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
 </head>
+
 <body>
-    
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html" style="font-size: 2rem;">
-        <img src="assets/logo.jpg" alt="Restaurant Logo">Kaimanam
+        <img src="assets/logo_rounded.png" alt="Restaurant Logo">Kaimanam
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop">
+        <span><i class="fas fa-hamburger"></i></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active"  href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/main.html">ORDER</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="#about" >ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#contact">CONTACT</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class=" px-2 search " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn0" type="submit">Search</button>
-        </form>
+
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-body" id="offcanvasTop">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/main.html">ORDER</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#contact">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class=" px-2 search " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn0" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>  
+  </nav>
 
   <section class="main">
     <div class="container py-5">
       <div class="row py-5">
         <div class="col-lg-7 pt-5 text-center">
-          <h1 class=" pt-5" >A Women Empowerment Initiative!</h1>
+          <h1 class=" pt-5">A Women Empowerment Initiative!</h1>
           <button class="btn1 mt-3">More Tips</button>
         </div>
       </div>
@@ -57,133 +66,141 @@
 
   <!--section-->
 
+
   <section class="new">
-    <div class="container py-4">
-        <div class="row pt-5 text-center">
-            <div class="col-lg-3">
-                <img src="./assets/b.jpg" class="img-fluid" width="200" height="150"alt="">
-                <h6>breakfast</h6>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/car-1.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/car-2.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/car-3.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/car-4.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/car-5.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/car-6.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/car-7.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/car-8.jpeg" class="d-block mx-auto " alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="product">
+    <div class="container">
+      <div class="row py-5 ">
+        <div class="col-lg-5 m-auto text-center">
+          <h1> 𝓦𝓱𝓪𝓽'𝓼 𝓢𝓹𝓮𝓬𝓲𝓪𝓵 </h1>
+          <h6 style="color: red;">Our Creations</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="./assets/sp0.jpg" class="img-fluid" alt="combo offer">
             </div>
-            <div class="col-lg-3">
-                <img src="./assets/c.jpg" class="img-fluid" width="200" height="150" alt="">
-                <h6>lunch</h6>
+          </div>
+          <h6>𝒘𝒆 𝒄𝒂𝒕𝒆𝒓 𝒕𝒐 𝑻𝒓𝒂𝒅𝒊𝒏𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝒆𝒗𝒆𝒏𝒕𝒔<br>𝓬𝓸𝓶𝓫𝓸</h6>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="./assets/sp1.jpeg" class="img-fluid" alt="our incredients">
             </div>
-            <div class="col-lg-3">
-                <img src="./assets/e.png" class="img-fluid" width="200" height="150"alt="">
-                <h6>snack</h6>
+          </div>
+          <h6>𝑾𝒆 𝒖𝒔𝒆 𝒐𝒖𝒓 𝒐𝒘𝒏 𝒊𝒏𝒈𝒓𝒆𝒅𝒊𝒆𝒏𝒕𝒔 </h6>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="./assets/sp2.jpg" class="img-fluid" alt="sweets">
             </div>
-            <div class="col-lg-3">
-                <img src="./assets/d.png" class="img-fluid"width="200" height="150" alt="">
-                <h6>dinner</h6>
+          </div>
+          <h6>𝑾𝒆 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆 𝒔𝒘𝒆𝒆𝒕𝒔 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒐𝒓𝒅𝒆𝒓</h6>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="./assets/sp3.jpeg" class="img-fluid" alt="snacks">
             </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="product">
-  <div class="container">
-    <div class="row py-5 ">
-      <div class="col-lg-5 m-auto text-center">
-        <h1>🥪 𝓦𝓱𝓪𝓽'𝓼 𝓢𝓹𝓮𝓬𝓲𝓪𝓵 🥙</h1>
-        <h6 style="color: red;">Our Creations</h6>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 text-center">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="./assets/sp0.jpg" class="img-fluid" alt="combo offer">
           </div>
+          <h6>𝑾𝒆 𝒂𝒍𝒔𝒐 𝒄𝒓𝒂𝒇𝒕 𝒉𝒆𝒂𝒍𝒕𝒉𝒚 𝒔𝒏𝒂𝒄𝒌𝒔</h6>
         </div>
-        <h6>𝒘𝒆 𝒄𝒂𝒕𝒆𝒓 𝒕𝒐 𝑻𝒓𝒂𝒅𝒊𝒏𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝒆𝒗𝒆𝒏𝒕𝒔<br>𝓬𝓸𝓶𝓫𝓸</h6>
       </div>
-
-      <div class="col-lg-3 text-center">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="./assets/sp1.jpeg" class="img-fluid" alt="our incredients">
-          </div>
+      <div class="row py-5">
+        <div class="col-lg-5 text-center m-auto">
+          <button class="btn1">𝒎𝒐𝒓𝒆</button>
         </div>
-        <h6>𝑾𝒆 𝒖𝒔𝒆 𝒐𝒖𝒓 𝒐𝒘𝒏 𝒊𝒏𝒈𝒓𝒆𝒅𝒊𝒆𝒏𝒕𝒔 </h6>
       </div>
+    </div>
+  </section>
 
-      <div class="col-lg-3 text-center">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="./assets/sp2.jpg" class="img-fluid" alt="sweets">
-          </div>
+
+  <section class="about">
+    <div class="container py-5">
+      <div class="row py-2">
+        <div class="col-lg-8 m-auto text-center">
+          <h1>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒐𝒖𝒓 𝒄𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚</h1>
+          <h6 style="color: red;">𝑾𝒆 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆 𝒇𝒐𝒐𝒅 𝒕𝒐 𝒐𝒓𝒅𝒆𝒓</h6>
         </div>
-        <h6>𝑾𝒆 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆 𝒔𝒘𝒆𝒆𝒕𝒔 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒐𝒓𝒅𝒆𝒓</h6>
       </div>
-
-      <div class="col-lg-3 text-center">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="./assets/sp3.jpeg" class="img-fluid" alt="snacks">
-          </div>
+      <div class="row text-center py-5">
+        <div class="col-lg-3">
+          <img src="./assets/c1.jpeg" class="img-fluid" alt="">
+          <h5 class="pb-3">𝑩𝒓𝒆𝒂𝒌𝒇𝒂𝒔𝒕</h5>
         </div>
-        <h6>𝑾𝒆 𝒂𝒍𝒔𝒐 𝒄𝒓𝒂𝒇𝒕 𝒉𝒆𝒂𝒍𝒕𝒉𝒚 𝒔𝒏𝒂𝒄𝒌𝒔</h6>
+
+        <div class="col-lg-3">
+          <img src="./assets/c2.jpeg" class="img-fluid" alt="">
+          <h5 class="pb-3">𝑳𝒖𝒏𝒄𝒉</h5>
+        </div>
+
+        <div class="col-lg-3">
+          <img src="./assets/c3.jpeg" class="img-fluid" alt="">
+          <h5 class="pb-3">𝑺𝒏𝒂𝒄𝒌𝒔</h5>
+        </div>
+
+        <div class="col-lg-3">
+          <img src="./assets/c4.jpeg" class="img-fluid" alt="">
+          <h5 class="pb-3">𝑫𝒊𝒏𝒏𝒆𝒓</h5>
+        </div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-lg-6 text-center m-auto">
+          <button class="btn1">𝒌𝒏𝒐𝒘 𝒎𝒐𝒓𝒆</button>
+        </div>
       </div>
     </div>
-    <div class="row py-5">
-      <div class="col-lg-5 text-center m-auto">
-        <button class="btn1">𝒎𝒐𝒓𝒆</button>
+  </section>
+
+
+  <section class="apple pt-5" id="about">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="col-lg-6 m-auto text-center">
+          <h6 class="pt-5">𝑶𝒖𝒓 𝒘𝒐𝒓𝒌𝒆𝒓𝒔 𝒓𝒆𝒄𝒊𝒑𝒆</h6>
+          <button class="btn1 mt-3">𝒌𝒏𝒐𝒘 𝒎𝒐𝒓𝒆</button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<section class="about">
-  <div class="container py-5">
-    <div class="row py-2">
-      <div class="col-lg-8 m-auto text-center">
-        <h1>𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒐𝒖𝒓 𝒄𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚</h1>
-        <h6>𝑾𝒆 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆 𝒇𝒐𝒐𝒅 𝒕𝒐 𝒐𝒓𝒅𝒆𝒓</h6>
-      </div>
-    </div>
-    <div class="row text-center py-5">
-      <div class="col-lg-3">
-        <img src="./assets/c1.jpeg" class="img-fluid" alt="">
-        <h5>𝑩𝒓𝒆𝒂𝒌𝒇𝒂𝒔𝒕</h5>
-      </div>
-
-      <div class="col-lg-3">
-        <img src="./assets/c2.jpeg" class="img-fluid" alt="">
-        <h5>𝑳𝒖𝒏𝒄𝒉</h5>
-      </div>
-
-      <div class="col-lg-3">
-        <img src="./assets/c3.jpeg" class="img-fluid" alt="">
-        <h5>𝑺𝒏𝒂𝒄𝒌𝒔</h5>
-      </div>
-
-      <div class="col-lg-3">
-        <img src="./assets/c4.jpeg" class="img-fluid" alt="">
-        <h5>𝑫𝒊𝒏𝒏𝒆𝒓</h5>
-      </div>
-    </div>
-    <div class="row pt-4">
-      <div class="col-lg-6 text-center m-auto">
-        <button class="btn1">𝒌𝒏𝒐𝒘 𝒎𝒐𝒓𝒆</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="apple py-5" id="about">
-  <div class="container py-5">
-    <div class="row py-5">
-      <div class="col-lg-6 m-auto text-center">
-        <h6 class="pt-5">𝑶𝒖𝒓 𝒘𝒐𝒓𝒌𝒆𝒓𝒔 𝒓𝒆𝒄𝒊𝒑𝒆</h6>
-        <button class="btn1 mt-3">𝒌𝒏𝒐𝒘 𝒎𝒐𝒓𝒆</button>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -192,7 +209,7 @@
       <div class="row">
         <div class="col-lg-5 m-auto text-center">
           <h1>𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝑼𝒔</h1>
-          <h6 style="color: red;">✌𝓐𝓵𝔀𝓪𝔂𝓼 𝓒𝓸𝓷𝓽𝓪𝓬𝓽 ✌</h6>
+          <h6 style="color: red;">𝓐𝓵𝔀𝓪𝔂𝓼 𝓒𝓸𝓷𝓽𝓪𝓬𝓽 </h6>
         </div>
       </div>
       <div class="row py-5">
@@ -201,62 +218,68 @@
             <div class="col-lg-4">
               <h6>𝑳𝒐𝒄𝒂𝒕𝒊𝒐𝒏</h6>
               <p>𝘗𝘦𝘳𝘶𝘮𝘢𝘭𝘢𝘨𝘢𝘳𝘢𝘮</p>
-
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.6371006262779!2d80.14001926954921!3d13.064392305596538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52611ab090d58f%3A0x1eec5ec28cbe6c8a!2sKAIMANAM%20HOME%20FOODS!5e0!3m2!1sen!2sin!4v1705593724431!5m2!1sen!2sin"
+                width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
               <h6>𝑷𝒉𝒐𝒏𝒆</h6>
-              <p>7604801875</p>
-            
+              <p>123456789</p>
+
               <h6>𝑬-𝒎𝒂𝒊𝒍</h6>
               <p>𝘬𝘢𝘪𝘮𝘢𝘯𝘢𝘮@𝘨𝘮𝘢𝘪𝘭.𝘤𝘰𝘮</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row ">
+                <div class="col-lg-6 p-3">
+                  <input type="text" class="form-control bg-light" placeholder="𝘕𝘢𝘮𝘦">
+                </div>
+                <div class="col-lg-6 p-3">
+                  <input type="text" class="form-control bg-light" placeholder="𝘕𝘶𝘮𝘣𝘦𝘳">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 py-3 m-auto">
+                  <textarea name="" class="form-control bg-light" placeholder="𝘘𝘶𝘳𝘪𝘦𝘴" id="" cols="10"
+                    rows="5"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center m-auto">
+                <button class="btn1">submit</button>
+              </div>
+            </div>
           </div>
-                  <div class="col-lg-7">
-                    <div class="row ">
-                      <div class="col-lg-6">
-                        <input type="text" class="form-control bg-light" placeholder="𝘕𝘢𝘮𝘦">
-                      </div>
-                      <div class="col-lg-6">
-                        <input type="text" class="form-control bg-light" placeholder="𝘕𝘶𝘮𝘣𝘦𝘳">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12 py-3 m-auto">
-                        <textarea name="" class="form-control bg-light" placeholder="𝘘𝘶𝘳𝘪𝘦𝘴" id="" cols="10" rows="5"></textarea>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 text-center m-auto">
-                    <button class="btn1">submit</button>
-                  </div>
-                  </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
 
 
-<section class="news py-5">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-lg-9 m-auto text-center">
-        <h1>𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑪𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚 </h1>
-        <input type="text" placeholder="enter email">
-        <button class="btn2"> 𝑺𝒖𝒃𝒎𝒊𝒕 </button>
+  <section class="news py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-9 m-auto text-center">
+          <h1>𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑪𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚 </h1>
+          <input type="text" placeholder="enter email">
+          <button class="btn2"> 𝑺𝒖𝒃𝒎𝒊𝒕 </button>
+        </div>
       </div>
-    </div>
-    <div class="row pt-5">
-      <div class="col-lg-11 m-auto">
-        <div class="row">
-          <div class="col-lg-3 py-3 m-auto text-center">
-            <h5 class="pb-3">𝑪𝒖𝒔𝒕𝒎𝒆𝒓 𝑪𝒂𝒓𝒆</h5>
-            <span><i class="fab fa-facebook"></i></span>
-            <span><i class="fab fa-instagram"></i></span>
-            <span><i class="fab fa-twitter"></i></span>
-            <span><i class="fab fa-google-plus"></i></span>
+      <div class="row pt-5">
+        <div class="col-lg-11 m-auto">
+          <div class="row">
+            <div class="col-lg-3 py-3 m-auto text-center">
+              <h5 class="pb-3">𝑪𝒖𝒔𝒕𝒎𝒆𝒓 𝑪𝒂𝒓𝒆</h5>
+              <span><i class="fab fa-facebook"></i></span>
+              <span><i class="fab fa-instagram"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-google-plus"></i></span>
+            </div>
           </div>
         </div>
       </div>
+      <p class="text-center">𝘤𝘰𝘱𝘺𝘳𝘪𝘨𝘩𝘵 @2023 𝘢𝘭𝘭 𝘳𝘪𝘨𝘩𝘵𝘴 𝘳𝘦𝘴𝘦𝘳𝘷𝘦𝘥 | 𝘵𝘩𝘪𝘴 𝘵𝘦𝘮𝘱𝘭𝘢𝘵𝘦
+        𝘪𝘴 𝘮𝘢𝘥𝘦 𝘣𝘺 𝘉𝘰𝘰𝘵𝘴𝘵𝘳𝘢𝘱</p>
     </div>
-    <p class="text-center">𝘤𝘰𝘱𝘺𝘳𝘪𝘨𝘩𝘵 @2023 𝘢𝘭𝘭 𝘳𝘪𝘨𝘩𝘵𝘴 𝘳𝘦𝘴𝘦𝘳𝘷𝘦𝘥 | 𝘵𝘩𝘪𝘴 𝘵𝘦𝘮𝘱𝘭𝘢𝘵𝘦 𝘪𝘴 𝘮𝘢𝘥𝘦 𝘣𝘺 𝘉𝘰𝘰𝘵𝘴𝘵𝘳𝘢𝘱</p>
-  </div>
-</section>
+  </section>
 </body>
+
 </html>

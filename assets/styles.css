@@ -16,10 +16,9 @@ body {
 .logo img {
     width: 150px;
     height: auto;
-    border: 2px solid #333; /* Added border color */
-    border-radius: 20px;
+    border-radius: 40%;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: transparent;
     padding: 10px;
 }
@@ -56,8 +55,10 @@ label {
 }
 
 #tableNumber {
-    width: 100%; /* Make it full-width */
-    padding: 10px; /* Adjust padding */
+    width: 100%;
+    /* Make it full-width */
+    padding: 10px;
+    /* Adjust padding */
     margin-bottom: 20px;
 }
 
@@ -75,7 +76,8 @@ label {
     border-radius: 5px;
     width: calc(33.33% - 20px);
     background-color: #F6F6F6;
-    text-align: center; /* Center-align the content */
+    text-align: center;
+    /* Center-align the content */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,13 +92,15 @@ label {
 .menu-item p {
     margin: 0;
     font-size: 0.9rem;
-    font-family:Playfair Display;
+    font-family: Playfair Display;
 }
 
 
 .menu-item img {
-    width: 200px; /* Set a fixed width for all images */
-    height: 200px; /* Set a fixed height for all images */
+    width: 200px;
+    /* Set a fixed width for all images */
+    height: 200px;
+    /* Set a fixed height for all images */
     display: block;
     margin: 0 auto;
 }
@@ -106,10 +110,12 @@ label {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px; /* Adjust padding */
+    padding: 10px 20px;
+    /* Adjust padding */
     border-radius: 5px;
     cursor: pointer;
-    align-self: center; /* Center the button vertically */
+    align-self: center;
+    /* Center the button vertically */
 }
 
 .menu-item button:hover {
@@ -142,7 +148,8 @@ label {
 .cart {
     margin-top: 10px;
     border: 1px solid #ddd;
-    padding: 20px; /* Adjust padding */
+    padding: 20px;
+    /* Adjust padding */
     border-radius: 30px;
 }
 
@@ -168,8 +175,10 @@ label {
 
 .button2 {
     text-align: center;
-    margin-top: 80px; /* Add margin to the top */
-    margin-bottom: 20px; /* Add margin to the bottom */
+    margin-top: 80px;
+    /* Add margin to the top */
+    margin-bottom: 20px;
+    /* Add margin to the bottom */
 }
 
 .button2 button {
@@ -183,38 +192,36 @@ label {
 
 
 
-@media all and (max-width:787px)
-{
-    .menu-item h3{
+@media all and (max-width:787px) {
+    .menu-item h3 {
         font-size: 15px;
     }
 
 
-    .menu-item img{
-        width: 95px; 
+    .menu-item img {
+        width: 95px;
         height: 90px;
-        
+
     }
 
     .heading {
         font-size: 13px;
-        
+
     }
 
-    .heading h1
-    {
+    .heading h1 {
         margin-right: 35px;
         margin-top: 10px;
         font-size: 35px;
-        font-family:'lobster',cursive;
+        font-family: 'lobster', cursive;
     }
-    
+
     .logo {
         margin-top: 10px;
         margin-left: 20px;
     }
 
-    .logo img{
+    .logo img {
         width: 100px;
         height: auto;
     }
